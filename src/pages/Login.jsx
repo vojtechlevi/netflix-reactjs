@@ -6,7 +6,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const { user, logIn } = UserAuth();
+  const { logIn } = UserAuth();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -14,7 +14,7 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/");
+      navigate("/home");
     } catch (error) {
       console.log(error);
       setError(error.message);
@@ -28,7 +28,6 @@ const Login = () => {
           className="hidden sm:block absolute w-full h-full object-cover"
           src="https://assets.nflxext.com/ffe/siteui/vlv3/93da5c27-be66-427c-8b72-5cb39d275279/f8e8e28b-fd6d-4896-bae0-f8472b3c61c3/SE-sv-20240226-popsignuptwoweeks-perspective_alpha_website_small.jpg"
           alt=""
-          srcset=""
         />
         <div className="bg-black/60 fixed top-0 left-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">

@@ -24,7 +24,7 @@ const Welcome = () => {
           <form className="flex flex-col gap-4 mt-4 w-full">
             <input
               type="email"
-              className="bg-gray-600/50 outline-none border border-gray-500 text-md w-[80%] rounded mx-auto py-2 px-2"
+              className="bg-gray-600/50 outline-none border border-gray-500 text-md w-[300px] rounded mx-auto py-2 px-2"
             />
             <button className=" bg-red-600 px-6 py-2 mx-auto w-[150px] rounded cursor-pointer text-white text-lg">
               Kom igång
